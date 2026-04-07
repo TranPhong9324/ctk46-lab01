@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Đây là một dự án [Next.js](https://nextjs.org) được khởi tạo bằng [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Bắt đầu
 
-First, run the development server:
+Trước tiên, hãy chạy máy chủ phát triển:
 
 ```bash
 npm run dev
@@ -14,23 +14,23 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mở [http://localhost:3000](http://localhost:3000) trên trình duyệt để xem kết quả.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Bạn có thể bắt đầu chỉnh sửa trang bằng cách sửa tệp `app/page.tsx`. Trang sẽ tự động cập nhật khi bạn thay đổi nội dung tệp.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Dự án này sử dụng [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) để tự động tối ưu và tải [Geist](https://vercel.com/font), một bộ font mới của Vercel.
 
-## Learn More
+## Tìm hiểu thêm
 
-To learn more about Next.js, take a look at the following resources:
+Để tìm hiểu thêm về Next.js, bạn có thể tham khảo các tài nguyên sau:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tài liệu Next.js](https://nextjs.org/docs) - tìm hiểu về các tính năng và API của Next.js.
+- [Học Next.js](https://nextjs.org/learn) - khóa học tương tác về Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Bạn cũng có thể xem [kho mã nguồn Next.js trên GitHub](https://github.com/vercel/next.js) - mọi góp ý và đóng góp đều được hoan nghênh.
 
-## Deploy on Vercel
+## Triển khai trên Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Cách đơn giản nhất để triển khai ứng dụng Next.js là sử dụng [nền tảng Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), do chính đội ngũ phát triển Next.js xây dựng.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hãy xem thêm [tài liệu triển khai Next.js](https://nextjs.org/docs/app/building-your-application/deploying) để biết chi tiết.
