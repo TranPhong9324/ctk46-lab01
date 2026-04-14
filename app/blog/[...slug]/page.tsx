@@ -3,12 +3,13 @@ import { notFound } from "next/navigation";
 import { getPostBySlug, posts } from "@/data/posts";
 
 interface BlogPostPageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string[] }>;
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const resolvedSlug = slug.join("/");
+  const post = getPostBySlug(resolvedSlug);
 
   if (!post) {
     notFound();
@@ -24,11 +25,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </Link>
 
       <article>
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center gap-3 mb-4 flex-wrap">
           <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">
             {post.category}
           </span>
           <span className="text-sm text-gray-400">{post.date}</span>
+          <span className="text-sm text-gray-400">Tác giả: {post.author}</span>
         </div>
 
         <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
@@ -43,6 +45,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
 export async function generateStaticParams() {
   return posts.map((post) => ({
-    slug: post.slug,
+    slug: [post.slug],
   }));
 }

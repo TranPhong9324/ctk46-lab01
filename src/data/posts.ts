@@ -5,6 +5,7 @@ export interface Post {
   content: string;
   date: string;
   category: string;
+  author: string;
 }
 
 export const posts: Post[] = [
@@ -24,6 +25,7 @@ Một số ưu điểm nổi bật của Next.JS:
 - Hỗ trợ TypeScript sẵn có`,
     date: "2025-01-15",
     category: "Công nghệ",
+    author: "Trần Văn Ngọc Phong",
   },
   {
     slug: "hoc-tailwind-css",
@@ -44,6 +46,7 @@ Bạn viết trực tiếp trong HTML:
 - File CSS cuối cùng rất nhỏ (chỉ chứa class đã dùng)`,
     date: "2025-01-20",
     category: "Công nghệ",
+    author: "Trần Văn Ngọc Phong",
   },
   {
     slug: "kinh-nghiem-hoc-lap-trinh",
@@ -62,6 +65,50 @@ Hãy bắt đầu từ những dự án nhỏ và tăng dần độ phức tạp
 Tham gia các cộng đồng lập trình để học hỏi và chia sẻ kinh nghiệm.`,
     date: "2025-02-01",
     category: "Học tập",
+    author: "Trần Văn Ngọc Phong",
+  },
+  {
+    slug: "devops-ci-cd-cho-sinh-vien",
+    title: "DevOps cho sinh viên: Bắt đầu với CI/CD từ dự án nhỏ",
+    excerpt:
+      "Hướng dẫn từng bước để áp dụng CI/CD vào dự án cá nhân bằng GitHub Actions và Docker.",
+    content: `DevOps không chỉ dành cho doanh nghiệp lớn. Với dự án cá nhân, bạn vẫn có thể áp dụng CI/CD để tiết kiệm thời gian và giảm lỗi khi triển khai.
+
+Quy trình mình đang dùng:
+1. Push code lên GitHub
+2. GitHub Actions tự động chạy lint + test
+3. Build Docker image
+4. Triển khai lên VPS
+
+Lợi ích rõ rệt:
+- Giảm thao tác thủ công khi deploy
+- Phát hiện lỗi sớm trước khi đưa lên production
+- Tạo thói quen làm việc chuyên nghiệp ngay từ khi còn đi học`,
+    date: "2025-02-08",
+    category: "Công nghệ",
+    author: "Trần Văn Ngọc Phong",
+  },
+  {
+    slug: "tu-hoc-google-apps-script",
+    title: "Tự học Google Apps Script qua bài toán thực tế",
+    excerpt:
+      "Cách mình dùng Google Apps Script để tự động hóa việc tổng hợp dữ liệu và gửi email báo cáo.",
+    content: `Google Apps Script là công cụ rất phù hợp cho các tác vụ tự động hóa nhanh.
+
+Trong một bài tập nhóm, mình dùng Apps Script để:
+- Đọc dữ liệu từ Google Form
+- Chuẩn hóa dữ liệu và ghi vào Google Sheets
+- Tự động gửi email tổng hợp mỗi tuần
+
+Kinh nghiệm rút ra:
+1. Thiết kế dữ liệu bảng tính rõ ràng từ đầu
+2. Viết hàm nhỏ, dễ test
+3. Dùng trigger theo lịch thay vì chạy thủ công
+
+Đây là một kỹ năng hữu ích cho cả học tập và công việc sau này.`,
+    date: "2025-02-14",
+    category: "Học tập",
+    author: "Trần Văn Ngọc Phong",
   },
 ];
 
