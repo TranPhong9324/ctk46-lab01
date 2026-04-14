@@ -1,18 +1,21 @@
 const projects = [
   {
-    title: "Website Portfolio",
-    description: "Website cá nhân xây dựng bằng Next.JS và Tailwind CSS",
+    title: "Nền tảng DevOps CI/CD",
+    description:
+      "Thiết lập pipeline tự động build, test và deploy ứng dụng web với Docker và GitHub Actions.",
+    tech: ["Gitlab", "Docker", "Nginx", "Linux"],
+  },
+  {
+    title: "Tự động hóa Google Apps Script",
+    description:
+      "Xây dựng hệ thống xử lý biểu mẫu và gửi email báo cáo tự động cho nhóm học tập.",
+    tech: ["Google Apps Script", "Google Sheets", "Gmail API"],
+  },
+  {
+    title: "Website Du lịch Đà Lạt",
+    description:
+      "Trang web giới thiệu địa điểm, lịch trình và trải nghiệm du lịch tại Đà Lạt với giao diện responsive.",
     tech: ["Next.JS", "Tailwind CSS", "TypeScript"],
-  },
-  {
-    title: "Ứng dụng Quản lý Công việc",
-    description: "Ứng dụng Todo App với React và Local Storage",
-    tech: ["React", "CSS Modules", "JavaScript"],
-  },
-  {
-    title: "API RESTful",
-    description: "API quản lý sản phẩm với Node.js và Express",
-    tech: ["Node.js", "Express", "MongoDB"],
   },
 ];
 
