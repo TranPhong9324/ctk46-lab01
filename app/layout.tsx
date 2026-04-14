@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
